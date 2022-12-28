@@ -177,8 +177,7 @@ img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, auto);
-    align-items: start;
-    justify-content: center;
+    align-content: start;
     grid-gap: 15px;
     margin: 0 50px;
   }
@@ -192,13 +191,14 @@ img {
   
   .home-main-grid h6 {
     max-width: 120px;
-    position: relative;
-    top: 30px;
-    left: 10px;
+    position: absolute;
     text-align: center;
     background-color: #FFFFFF;
     border: 2px lightgrey solid;
     border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0 8px;
   }
                   /*---- CHILD1 ----*/
   .grid-child1-smallerbanner {
@@ -288,10 +288,11 @@ img {
     font-size: 12px;
     font-weight: bold;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 11px 5px 0px 5px;
     text-align: justify;
-    border-radius: 2px;
+    border-radius: 0 0 20px 20px;
   }
+
   
                   /*---- CHILD3 ----*/
   .grid-child3-pregnancy {
@@ -307,18 +308,19 @@ img {
   }
   
   .title2-paragraph {
-    width: 90%;
+    width: 96.5%;
+    height: 30%;
     position: relative;
-    bottom: 70px;
+    bottom: 90px;
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     opacity: 0.8;
     font-size: 12px;
     font-weight: bold;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 11px 5px 0px 5px;
     text-align: justify;
-    border-radius: 2px;
+    border-radius: 0 0 20px 20px;
   }
   
                   /*---- CHILD4 ----*/
@@ -335,18 +337,19 @@ img {
   }
   
   .title3-paragraph {
-    width: 90%;
+    width: 98.5%;
+    height: 30%;
     position: relative;
-    bottom: 70px;
+    bottom: 90px;
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     opacity: 0.8;
     font-size: 12px;
     font-weight: bold;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 11px 5px 0px 5px;
     text-align: justify;
-    border-radius: 2px;
+    border-radius: 0 0 20px 20px;
   }
   
                   /*---- CHILD5 ----*/
@@ -363,18 +366,19 @@ img {
   }
   
   .title4-paragraph {
-    width: 90%;
+    width: 98%;
+    height: 30%;
     position: relative;
-    bottom: 70px;
+    bottom: 90px;
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     font-weight: bold;
     opacity: 0.8;
     font-size: 12px;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 11px 5px 0px 6px;
     text-align: justify;
-    border-radius: 2px;
+    border-radius: 0 0 20px 20px;
   }
                   /*---- CHILD6 ----*/
   .grid-child6-birthday {
@@ -390,38 +394,44 @@ img {
   }
   
   .title5-paragraph {
-    width: 90%;
+    width: 96%;
+    height: 30%;
     position: relative;
-    bottom: 70px;
+    bottom: 90px;
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     font-weight: bold;
     opacity: 0.8;
     font-size: 12px;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 11px 5px 0px 5px;
     text-align: justify;
-    border-radius: 2px;
+    border-radius: 0 0 20px 20px;
   }
   
                   /*---- CHILD7 ----*/
   .grid-child7-professionalprofile {
     grid-column: 5/6;
     grid-row: 2/4;
-    height: auto;
+    justify-self: center;
   }
+    
+  .title6{
+    text-align: center;
+   }
   
   .professionalprofile-image {
     width: 90%;
-    height: 490px;
-    margin: 0;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 0 auto;    
   }
   
                   /*---- CHILD8 ----*/
   .grid-child8-socialmediapics {
     grid-column: 1/6;
     grid-row: 4/5;
-    margin-top: 30px;
     padding: 0 0px;
     justify-self: center;
     text-align: center;
@@ -432,9 +442,6 @@ img {
    margin: 0 10px;
   }
   
-  .title6{
-   text-align: center;
-  }
   
   .title7-paragraph {
     color: var(--paragraph-color-on-white);
@@ -465,16 +472,17 @@ img {
   }
   
   .title8-paragraph {
-    width: 90%;
+    width: 96.5%;
+    height: 30%;
     position: relative;
-    bottom: 70px;
+    bottom: 90px;
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     font-weight: bold;
     opacity: 0.8;
     font-size: 12px;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 11px 5px 0px 5px;
     text-align: justify;
     border-radius: 2px;
   }
