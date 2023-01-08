@@ -96,6 +96,10 @@ img {
     background-color: var(--accent2-color);
   }
 
+  a {
+    text-decoration: none;
+  }
+
   form {
     grid-column: 3/4;
     grid-row: 1/2;
@@ -147,7 +151,7 @@ img {
   }
   .facebookicon, .instagramicon {
     width: 30px;
-    /*margin-right: 20px;*/
+    margin-right: 10px;
   }
 
 /* --------------- HERO GRID ---------------- */
@@ -263,6 +267,8 @@ img {
   }
   
                   /*---- CHILD2 ----*/
+
+  /* images size inside main grid: 271 x 250 */
   .grid-child2-smashthecake {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -581,6 +587,10 @@ img {
     width: 40px;
     padding: 15px 10px;
     margin: 0 auto;
+  }
+
+  .chaticon {
+    width: 35px;
   }
 
 
