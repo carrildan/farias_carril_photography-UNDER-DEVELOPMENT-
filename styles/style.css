@@ -620,7 +620,7 @@ img {
     grid-gap: 50px;
     justify-content: center;
     align-content: start;
-    background-color: rgb(246, 227, 227);
+    background-color: #FFFFFF;
     padding: 100px;
   }
 
@@ -633,13 +633,16 @@ img {
     margin-bottom: 10px;
   }
 
-
-
   /* Slideshow container */
 .slideshow-container, .slideshow-container2, .slideshow-container3, .slideshow-container4, .slideshow-container5, .slideshow-container6, .slideshow-container7, .slideshow-container8 {
   max-width: 500px;
   position: relative;
   margin: auto;
+}
+
+.gallery-main-grid img {
+  border: 5px solid black;
+  padding: 0;
 }
 
 /* Hide the images by default */
