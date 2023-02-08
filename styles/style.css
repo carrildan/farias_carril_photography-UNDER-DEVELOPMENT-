@@ -256,15 +256,14 @@ img {
     text-align: justify;
   }
   
-  #newborn-banner-chatimage {
+  /*#newborn-banner-chatimage {
     width: 40px;
     position: absolute;
     left: 65%;
     bottom: 10%;
     border: none;
     box-shadow: none;
-
-  }
+  }*/
   
                   /*---- CHILD2 ----*/
 
@@ -499,7 +498,7 @@ img {
     width: 100%;
     height: auto;
     background-color: var(--primary-color);
-    margin: 0;
+    margin: 100px 0 0 0;
     
   }
   
@@ -583,7 +582,7 @@ img {
     text-align: center; 
   }
   
-  .emailicon, .chaticon  {
+  .emailicon /*.chaticon TO DO: replace when chat is available*/  {
     width: 40px;
     padding: 15px 10px;
     margin: 0 auto;
@@ -621,7 +620,7 @@ img {
     justify-content: center;
     align-content: start;
     background-color: #FFFFFF;
-    padding: 100px;
+    padding: 100px 100px 0 100px;
   }
 
   .gallery-main-grid h5 {
