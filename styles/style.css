@@ -12,7 +12,7 @@
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Tahoma", sans-serif;
-  --paragraph-font: "Georgia", "Times New Roman", sans-serif;
+  --paragraph-font: "sans-serif", "Times New Roman", arial;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #350A51;  /* headlines on a white background */ 
@@ -29,7 +29,7 @@
 body {
   width: 100%;
   background-color: var(--accent2-color);
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 0;
 }
 
@@ -290,7 +290,7 @@ img {
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     margin: 0 auto;
     padding: 11px 5px 0px 5px;
@@ -320,7 +320,7 @@ img {
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     margin: 0 auto;
     padding: 11px 5px 0px 5px;
@@ -349,7 +349,7 @@ img {
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     margin: 0 auto;
     padding: 11px 5px 0px 5px;
@@ -379,7 +379,7 @@ img {
     color: var(--paragraph-background-color);
     font-weight: bold;
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0 auto;
     padding: 11px 5px 0px 6px;
     text-align: justify;
@@ -407,7 +407,7 @@ img {
     color: var(--paragraph-background-color);
     font-weight: bold;
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0 auto;
     padding: 11px 5px 0px 5px;
     text-align: justify;
@@ -485,7 +485,7 @@ img {
     color: var(--paragraph-background-color);
     font-weight: bold;
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0 auto;
     padding: 11px 5px 0px 5px;
     text-align: justify;
