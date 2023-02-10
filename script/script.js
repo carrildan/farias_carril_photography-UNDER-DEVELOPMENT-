@@ -24,7 +24,9 @@ UserMessage();*/
 
 
 function myFunction() {
+    
     document.getElementById("myDropdown").classList.toggle("show");
+    
 }
 
 
@@ -34,12 +36,15 @@ function filterFunction() {
     filter = input.value.toUpperCase();
     div = document.getElementById("myDropdown");
     a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-      txtValue = a[i].textContent || a[i].innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        a[i].style.display = "";
+    ul = document.getElementById("myDropdown");
+    li = ul.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
       } else {
-        a[i].style.display = "none";
+        li[i].style.display = "none";
       }
     }
 }
