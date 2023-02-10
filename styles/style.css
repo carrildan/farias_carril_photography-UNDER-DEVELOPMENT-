@@ -33,7 +33,7 @@ body {
   margin: 0 0;
 }
 
-h1, h2, h4, h5, h6 {
+h1, h2, h4, h5, h6{
   font-family: var(--heading-font);
   color: var(--primary-color);
   margin: 0;
@@ -98,6 +98,7 @@ img {
 
   a {
     text-decoration: none;
+    color: var(--primary-color);
   }
 
   form {
@@ -525,10 +526,10 @@ img {
    
   }
   
-  nav a:hover{
+  /*nav a:hover{
     background-color:var(--accent2-color);
     color: var(--nav-link-color);
-  }
+  }*/
   
   .search-block {
     width: 33%;
@@ -674,6 +675,7 @@ img {
   .gallery-main-grid h5 {
     margin-left: 70px;
   }
+
   .gallery-main-grid-child1 {          /* -----child1 - newborn------*/
     grid-column: 1/2;
     grid-row: 1/2;
@@ -834,6 +836,11 @@ img {
   .contactus-main-grid-child2 {
     background-color: #F1820B;
   }
+
+  .contactus-main-grid-child2 h2, p {
+    color: white;
+  }
+
   .email-img {
     width: 250px;
     float: left;
@@ -861,6 +868,10 @@ img {
    /*------ CHILD 4 ---------*/
   .contactus-main-grid-child4 {
     background-color: #FFFFFF;
+ }
+
+  .contactus-main-grid-child4 p{
+    color: var(--primary-color);
   }
 
   .phone-img {
@@ -874,8 +885,9 @@ img {
     background-color: #F1820B;
   }
 
-  .contactus-main-grid-child5 a {
+  .contactus-main-grid-child5 a h2 {
     text-decoration: none;
+    color: white;
   }
 
   .facebook-img {
