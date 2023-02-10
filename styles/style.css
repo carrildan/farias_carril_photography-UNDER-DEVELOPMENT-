@@ -113,7 +113,11 @@ img {
     text-align: center;
   }
 
-  /* Full-width inputs */
+  li {
+    list-style: none;
+  }
+
+  /* styling inputs fields of the page */
   input[type=text], input[type=password] {
     width: 27%;
     height: 40px;
@@ -555,19 +559,7 @@ img {
     margin-top: 25px
   }
 
-  /* SEARCH FILTER DIV */
-  .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-  }
+  /* -------------SEARCH FILTER DIV------------ */
   
   #myInput {
     box-sizing: border-box;
@@ -579,9 +571,7 @@ img {
     border: none;
     border-bottom: 1px solid #ddd;
   }
-  
-  #myInput:focus {outline: 3px solid #2c2b2b;}
-  
+    
   .dropdown {
     position: relative;
     display: inline-block;
@@ -590,7 +580,7 @@ img {
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 300%;
+    top: 273%;
     right: 43%;
     background-color: #f6f6f6;
     min-width: 230px;
@@ -606,10 +596,13 @@ img {
     display: block;
   }
   
-  .dropdown, #myDropdown a:hover {background-color: rgb(100, 101, 100);}
+  .dropdown, #myDropdown a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+  }
   
   .show {display: block;}
-
+/*-----------------------------------------------*/
   .copyright {
     position: relative;
     left: -90px;
