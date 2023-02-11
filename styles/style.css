@@ -259,6 +259,7 @@ img {
     font-size: 16px;
     padding: 0 50px;
     text-align: justify;
+    color: var(--accent3-color);
   }
   
   /*#newborn-banner-chatimage {
@@ -837,9 +838,14 @@ img {
     background-color: #F1820B;
   }
 
-  .contactus-main-grid-child2 h2, p {
+  .contactus-main-grid-child2 h2 {
     color: white;
   }
+
+  #email-contact-paragraph {
+    color: white;
+  }
+  
 
   .email-img {
     width: 250px;
