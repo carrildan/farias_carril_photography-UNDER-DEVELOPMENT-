@@ -23,13 +23,13 @@ function smallImg (x) {
 UserMessage();*/
 
 
+//this function opens a menu list of itens
 function myFunction() {
-    
     document.getElementById("myDropdown").classList.toggle("show");
-    
 }
 
 
+//filter the options on the menu list
 function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("searchbar");
