@@ -354,7 +354,7 @@ img {
     bottom: 90px;
     background-color: var(--accent2-color);
     color: var(--paragraph-background-color);
-    opacity: 0.8;
+    opacity: 0.9;
     font-size: 13px;
     font-weight: bold;
     margin: 0 auto;
@@ -606,11 +606,20 @@ img {
   .show {display: block;}
 /*-----------------------------------------------*/
   .copyright {
-    position: relative;
-    left: -90px;
-    top: 30px;
+    width: 320px;
+    position: absolute;
+    left: 39.5%;
+    bottom: -237%;
+    text-align: center;
   }
   
+  .copyright-gallery {
+    width: 320px;
+    position: absolute;
+    left: 39.5%;
+    bottom: -280%; /* TO DO: FIX POSITION */
+    text-align: center;
+  }
   .emailchaticons {
     width: 33%;
     order: 3;
