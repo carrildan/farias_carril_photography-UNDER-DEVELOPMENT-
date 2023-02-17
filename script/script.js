@@ -56,7 +56,7 @@ function filterFunction() {
 //sort the dropdown menu list in alphabetic order TO DO: FIGURE OUT WHY IT IS NOT WORKING
 function Sort() {
   var list, i, switching, shouldSwitch;
-  list = document.querySelector("#myDropdown .dropdown-content");
+  list = document.querySelector("#list");
   switching = true;
   while (switching)
   {
