@@ -31,6 +31,7 @@ function myFunction() {
 
 //filter the options on the menu list
 function filterFunction() {
+    
     var input, filter, ul, li, a, i;
     input = document.getElementById("searchbar");
     filter = input.value.toUpperCase();
@@ -46,5 +47,28 @@ function filterFunction() {
       } else {
         li[i].style.display = "none";
       }
+      
     }
+    
+    
+}
+
+//sort the dropdown menu list in alphabetic order TO DO: FIGURE OUT WHY IT IS NOT WORKING
+function Sort() {
+  var list, i, switching, shouldSwitch;
+  list = document.querySelector("#myDropdown .dropdown-content");
+  switching = true;
+  while (switching)
+  {
+    switching = false;
+    b = list.getElementsByTagName("li");
+    for (i=0; i<(b.length - 1); i++){
+      shouldSwitch = false;
+      if (b[i].innerHTML.toLowerCase() > b[i+1].innerHTML.toLowerCase()){
+        shouldSwitch = true;
+        break;
+      }
+    }
+  }
+
 }
