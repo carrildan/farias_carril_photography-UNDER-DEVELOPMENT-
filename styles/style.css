@@ -617,9 +617,18 @@ img {
     width: 320px;
     position: absolute;
     left: 39.5%;
-    bottom: -280%; /* TO DO: FIX POSITION */
+    bottom: -288%; 
     text-align: center;
   }
+
+  .copyright-contact {
+    width: 320px;
+    position: absolute;
+    left: 39.5%;
+    bottom: -192%; 
+    text-align: center;
+  }
+
   .emailchaticons {
     width: 33%;
     order: 3;
