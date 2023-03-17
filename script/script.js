@@ -26,6 +26,35 @@ UserMessage();*/
 //this function opens a menu list of itens
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
+    
+  }
+
+
+//sort the dropdown menu list in alphabetic order TO DO: FIGURE OUT WHY IT IS NOT WORKING
+function sort() {
+  var list, i, switching, shouldSwitch;
+  div = document.querySelector(".search-block");
+  //a = div.getElementsById("a");
+  list = document.getElementById("list1");
+  switching = true;
+  while (switching)
+  {
+    switching = false;
+    b = list.getElementsByTagName("li");
+    for (i=0; i<(b.length - 1); i++){
+      shouldSwitch = false;
+      if (b[i].textContent.toLowerCase() > b[i+1].textContent.toLowerCase()){
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch)
+    {
+      b[i].parentNode.insertBefore(b[i+1], b[i]);
+      switching = true;
+    }
+  }
+
 }
 
 
@@ -37,38 +66,17 @@ function filterFunction() {
     filter = input.value.toUpperCase();
     div = document.getElementById("myDropdown");
     a = div.getElementsByTagName("a");
-    ul = document.getElementById("myDropdown");
+    ul = document.getElementById("list1");
     li = ul.getElementsByTagName("li");
 
     for (i = 0; i < li.length; i++) {
       a = li[i].getElementsByTagName("a")[0];
       if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
       } else {
         li[i].style.display = "none";
       }
       
-    }
-    
-    
+    } 
 }
 
-//sort the dropdown menu list in alphabetic order TO DO: FIGURE OUT WHY IT IS NOT WORKING
-function Sort() {
-  var list, i, switching, shouldSwitch;
-  list = document.querySelector("#list");
-  switching = true;
-  while (switching)
-  {
-    switching = false;
-    b = list.getElementsByTagName("li");
-    for (i=0; i<(b.length - 1); i++){
-      shouldSwitch = false;
-      if (b[i].innerHTML.toLowerCase() > b[i+1].innerHTML.toLowerCase()){
-        shouldSwitch = true;
-        break;
-      }
-    }
-  }
 
-}
