@@ -1,4 +1,4 @@
-/* Fonts from Google Fonts - more at https://fonts.google.com */
+/* Fºnts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
@@ -582,7 +582,7 @@ img {
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 273%;
+    top: 269%;
     right: 43%;
     background-color: #f6f6f6;
     min-width: 230px;
@@ -604,6 +604,10 @@ img {
   }
   
   .show {display: block;}
+
+  #list1 {
+    padding: 0;
+  }
 /*-----------------------------------------------*/
   .copyright {
     width: 320px;
