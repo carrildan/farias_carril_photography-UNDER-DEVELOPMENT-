@@ -1,8 +1,16 @@
+
+
 /* Fºnts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
 :root {
+  /*for different device sizes*/
+  --mobile-size: 576px;
+  --tablet-size: 768px;
+  --laptop-size: 992px;
+  --desktop-size: 1200px;
+
   /* change the values below to your colors from your palette */
   --primary-color: #350A51;
   --secondary-color: #F1820B;
@@ -922,4 +930,26 @@ img {
     width: 250px;
     float: right;
     /*margin-left: 20px;*/
+  }
+
+  /* ----------- MEDIA QUERY ------------*/
+  
+
+  @media screen and (max-width: 576px) {
+   img {
+    width: auto;
+   }
+
+    #home-header-grid, nav{
+      display: block;
+      height: auto;
+      background-color: green;
+    }
+
+    nav a {
+      display: block;
+      width: auto;
+      height: auto;
+    }
+
   }
