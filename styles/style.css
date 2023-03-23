@@ -1,8 +1,16 @@
+
+
 /* Fºnts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
 :root {
+  /*for different device sizes*/
+  --mobile-size: 576px;
+  --tablet-size: 768px;
+  --laptop-size: 992px;
+  --desktop-size: 1200px;
+
   /* change the values below to your colors from your palette */
   --primary-color: #350A51;
   --secondary-color: #F1820B;
@@ -94,6 +102,10 @@ img {
   
   nav a:hover {
     background-color: var(--accent2-color);
+  }
+
+  nav .icon {
+    display: none;
   }
 
   a {
@@ -922,4 +934,48 @@ img {
     width: 250px;
     float: right;
     /*margin-left: 20px;*/
+  }
+
+  /* ----------- MEDIA QUERY ------------*/
+  
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 576px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+      float: right;
+      display: block;
+    }
+
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    @media screen and (max-width: 576px) {
+      nav.responsive {position: relative;}
+      nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+  
+   /* img {
+    width: auto;
+   }
+
+    #home-header-grid, nav{
+      display: block;
+      height: auto;
+      background-color: green;
+    }
+
+    nav a {
+      display: block;
+      width: auto;
+      height: auto;
+    } */
+
   }
