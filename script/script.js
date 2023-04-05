@@ -1,35 +1,11 @@
-//changes whats app icon size in child1
-/*function bigImg (x) {
-    x.style.width = "50px";
-}
 
-function smallImg (x) {
-    x.style.width = "40px"
-}*/
-
-
-//welcome user message
-/*function UserMessage() { 
-    const header = document.querySelector(".socialmediaicons");
-    const newPara = document.createElement("p");
-    newPara.textContent = "welcome user";
-    //header.appendChild(newPara);
-    newPara.style.width="150px";
-    newPara.style.margin="0 0 0 50px";
-    newPara.style.float="right";
-    newPara.style.color="white";
-    newPara.style.textAlign="center";
-}
-UserMessage();*/
-
-
-//this function opens a menu list of itens
+//this function opens a menu list of itens on footer
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
 
-//sort the dropdown menu list in alphabetic order TO DO: FIGURE OUT WHY IT IS NOT WORKING
+//sort the dropdown menu list in alphabetic order
 function Sort() {
   var list, i, switching, shouldSwitch;
   div = document.querySelector(".search-block");
@@ -82,11 +58,11 @@ function filterFunction() {
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function ScreenSizeMenu() {
   var x = document.getElementById("myTopnav");
-  if (x.tagName === "nav") {
-    x.tagName += "responsive";
+  if (x.className === "topnav") {
+    x.className += " responsive";
 
   } else {
-    x.tagName = "nav";
+    x.className = "topnav";
   }
 }
 
