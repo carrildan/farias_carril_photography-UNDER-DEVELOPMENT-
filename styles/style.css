@@ -1031,7 +1031,7 @@ img {
       display: block;
     }
 
-    /*sets to its original position*/
+    /*sets to its original positions*/
     .copyright {
       position:initial;
     }
