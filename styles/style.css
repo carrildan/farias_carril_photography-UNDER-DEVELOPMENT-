@@ -979,6 +979,12 @@ img {
       margin-right: 0.5%;
     }
 
+    /*creates white space between other header and footer*/
+    main {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
     /*allows nav items to dropdown as block*/
     .topnav, #home-header-grid, #hero-grid {
       height: auto;
@@ -1016,6 +1022,11 @@ img {
       margin-bottom: 10%;
     }
 
+    .grid-child1-smallerbanner {
+      height: auto;
+      margin-bottom: 135%; /*pushes child2 down*/
+    }
+
     .newborn-img-box {
       width: 80%;
       margin: 0 auto;
@@ -1025,6 +1036,30 @@ img {
     #newborn-banner-image {
       margin-left: auto;
       margin-top: auto;
+    }
+
+    .newborn-msg-box {
+      width: 77%;
+      height: auto;
+      margin-top: 50%; 
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      padding: 10px 0px;
+    }
+
+    .grid-child1-smallerbanner h1, .newborn-paragraph {
+      width: auto;
+      font-size: 70%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .grid-child2-smashthecake, .grid-child3-pregnancy, .grid-child4-prewedding, .grid-child5-familysession, .grid-child6-birthday {
+      margin-bottom: 25%;
+    }
+
+    .grid-child7-professionalprofile {
+      margin-bottom: 10%;
     }
 
     #footer-box {
