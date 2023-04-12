@@ -646,13 +646,16 @@ img {
     text-align: center;
   }
 
+  .facebookicon2, .instagramicon2 {
+    display: none;
+  }
+
   .emailchaticons {
     width: 33%;
     order: 3;
     margin: 0 auto;
     text-align: center;
     align-self: center;
-    
   }
   
   .emailchaticons p {
@@ -1066,9 +1069,41 @@ img {
       display: block;
     }
 
+    #footer-nav {
+      display: block;
+      text-align: center;
+    }
+
+    /*center the nav bar*/
+    #footer-nav a {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
     /*sets to its original position*/
     .copyright {
       position:initial;
     }
+
+    .search-block {
+      display: none;
+    }
+
+    .emailchaticons {
+      display: inline;
+    }
+
+    .emailicon {
+      margin-left: 15px;
+    }
+
+    /*these icons only render when screen gets 600px*/
+    .facebookicon2, .instagramicon2 {
+      display:inline;
+      width: 5.9%;
+      padding-bottom: 15px;
+      padding-right: 15px;
+    }
+
   }
 }
