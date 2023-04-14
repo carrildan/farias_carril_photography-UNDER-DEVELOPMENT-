@@ -1075,9 +1075,9 @@ img {
       display: block;
     }
 
-<<<<<<< HEAD
+
     /*sets to its original positions*/
-=======
+
     #footer-nav {
       display: block;
       text-align: center;
@@ -1090,7 +1090,7 @@ img {
     }
 
     /*sets to its original position*/
->>>>>>> branch1
+    
     .copyright {
       position:initial;
     }
