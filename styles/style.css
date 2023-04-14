@@ -34,6 +34,11 @@
   --nav-hover-background-color: #FFFFFF;
 }
 
+/*This makes sure that the padding and border are included in the total width and height of the elements.*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 99.5%;
   background-color: var(--accent2-color);
@@ -72,7 +77,7 @@ img {
 /*  --------------- HOME HEADER GRID ------------*/
 #home-header-grid {
     display: grid;
-    grid-template-columns: 15% 1fr 500px 1fr;
+    grid-template-columns: 15% 1fr 3% 1fr; /*third collumn is for future login div*/
     grid-template-rows: auto;
     justify-content: stretch;
     margin-bottom: 10px;
@@ -165,6 +170,7 @@ img {
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
+    width: 150px;
   
   }
   .facebookicon, .instagramicon {
@@ -943,15 +949,15 @@ img {
 /* ----------- MEDIA QUERY ------------*/
   
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
-
+  }
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -1098,12 +1104,10 @@ img {
     }
 
     /*these icons only render when screen gets 600px*/
-    .facebookicon2, .instagramicon2 {
+    .facebookicon_footer, .instagramicon_footer {
       display:inline;
       width: 5.9%;
       padding-bottom: 15px;
       padding-right: 15px;
     }
-
-  }
 }
