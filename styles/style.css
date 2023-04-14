@@ -1075,6 +1075,8 @@ img {
       display: block;
     }
 
+
+    /*sets to its original positions*/
     #footer-nav {
       display: block;
       text-align: center;
