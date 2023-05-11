@@ -1,5 +1,5 @@
 # farias_carril_photography - UNDER DEVELOPMENT
-A professional web site for a photographer to post her photography content and art. It is also a platform where current and in potential customers can hire her services. This project was designed and developed using Figma, Html, CSS and JavaScript.
+A professional web site for a photographer to post her photography content and art. It is also a platform where current and in potential customers can hire her services. This project was designed and is being using Figma, Html, CSS and JavaScript.
 
  
 
